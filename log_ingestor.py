@@ -2,7 +2,8 @@ from flask import Flask, request, jsonify
 from elasticsearch import Elasticsearch
 
 app = Flask(__name__)
-es = Elasticsearch()
+# Replace 'http://localhost:9200' with the actual address of your Elasticsearch server
+es = Elasticsearch(['http://localhost:9200'])
 
 @app.route('/ingest', methods=['POST'])
 def ingest_log():

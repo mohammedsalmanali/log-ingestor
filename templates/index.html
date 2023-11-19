@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Query Interface</title>
+</head>
+<body>
+    <h1>Log Query Interface</h1>
+    <form action="/search" method="post">
+        <label for="level">Level:</label>
+        <input type="text" name="level">
+        <br>
+        <label for="message">Message:</label>
+        <input type="text" name="message">
+        <br>
+        <label for="resourceId">Resource ID:</label>
+        <input type="text" name="resourceId">
+        <br>
+        <!-- Add other filters based on your requirements -->
+        <br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
